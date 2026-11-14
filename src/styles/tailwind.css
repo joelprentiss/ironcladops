@@ -37,7 +37,6 @@
   }
 
   html {
-    scroll-behavior: smooth;
   }
 
   h1, h2, h3, h4, h5, h6 {
@@ -242,5 +241,12 @@
   }
   .btn-primary:hover {
     transform: none;
+  }
+}
+
+/* Smooth scrolling only when the user has not asked for reduced motion */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
   }
 }
